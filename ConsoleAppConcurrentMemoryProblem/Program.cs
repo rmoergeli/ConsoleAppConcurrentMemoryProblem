@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleAppConcurrentMemoryProblem.Helpers;
+using System;
 
 namespace ConsoleAppConcurrentMemoryProblem
 {
@@ -6,7 +7,11 @@ namespace ConsoleAppConcurrentMemoryProblem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            GlobalSettings globalSettings = new GlobalSettings();
+
+            BiggestFolder.Execute();
+
+            Console.WriteLine("... done");
         }
     }
 }
